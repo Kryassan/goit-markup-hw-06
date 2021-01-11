@@ -263,38 +263,7 @@ img {
   background: #188ce8;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .modal-order {
-  
   position: fixed;
   left: 0px;
   top: 0px;
@@ -309,6 +278,7 @@ img {
 }
 
 .modal-order .modal {
+  display: inline-block;
   width: 528px;
   height: 581px;
   border-radius: 4px;
@@ -322,10 +292,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-
-
 .modal-order .form-title {
-  display: inline-block;
   margin-bottom: 12px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -336,55 +303,6 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .modal-order .for-inputs {
   width: 100%;
@@ -460,9 +378,18 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 
-
 .modal-order .checkbox-label {
+  display: inline-block;
+  width: 100%;
+  align-items: center;
   text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .modal-order .checkbox-icon {
@@ -491,67 +418,40 @@ img {
 	overflow: hidden;
 }
 
-.modal-order .checkbox-label {
-  display: inline-block;
-  align-items: center;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
 .modal-order .checkbox-link {
   color: #2196F3;
   text-decoration: underline;
 }
 
 .modal-order .button-send {
+  display: block;
   width: 200px;
   height: 50px;
   padding: 0px;
   margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
 }
 
+.modal-order .button-send:hover,
+.modal-order .button-send:focus {
+  background-color: #188CE8;
+} 
+
+
 .modal-order .button-title {
-  display: inline-block;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .modal-order .close-button {
   position: absolute;
@@ -578,37 +478,6 @@ img {
   opacity: 0;
   visibility: hidden;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .advantages {
   width: auto;
