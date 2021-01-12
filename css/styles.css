@@ -270,7 +270,6 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-order.is-hidden .modal {
@@ -287,7 +286,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms linear;
+  transition: 250ms linear;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -333,6 +332,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
+  
 }
 
 .modal-order .input-icon {
@@ -341,6 +341,7 @@ img {
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-order .input:focus {
@@ -361,6 +362,7 @@ img {
   margin: 4px 0px 20px 0px;
   padding: 12px 16px;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-order .comment:focus {
@@ -398,6 +400,7 @@ img {
   height: 15px;
   border: 2px solid #2a2a2a;
   border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-order .checkbox-input:checked + .checkbox-icon {
@@ -435,6 +438,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-order .button-send:hover,
@@ -466,6 +470,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-order .close-button:hover .close-icon,
@@ -541,6 +546,9 @@ img {
 }
 
 .our-work .title {
+  display: inline-block;
+  width: 100%;
+  padding: 0px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -549,7 +557,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding: 0px;
+  text-transform: none;
 }
 
 .our-work .presentation-list {
@@ -575,8 +583,9 @@ img {
 }
 
 .our-team .title {
-  display:block;
+  display:inline-block;
   padding-top: 94px;
+  width: 100%;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -584,6 +593,9 @@ img {
   line-height: 42px;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+  text-transform: none;
+  text-align: center;
+  ;
 }
 
 .our-team .our-team-list {
@@ -681,6 +693,9 @@ img {
 }
 
 .clients .title {
+  display: inline-block;
+  width: 100%;
+  padding-top: 94px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -689,7 +704,8 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-top: 94px;
+  text-transform: none;
+  text-align: center;
 }
 
 .clients .client-box {
@@ -750,7 +766,7 @@ img {
 }
 
 .footer .first-box {
-  display: block;
+  display: inline-block;
   padding-top: 60px;
   padding-bottom: 60px;
   margin-right: 70px;
@@ -767,13 +783,13 @@ img {
 }
 
 .first-box .contacts {
+  display: block;
   width: 231px;
-  height: 81px;
   margin-top: 20px;
 }
 
-.first-box .item :not(:last-child) {
-  padding-bottom: 9px;
+.first-box .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .first-box .address {
@@ -796,6 +812,31 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer .second-box {
   display: inline-block;
@@ -884,6 +925,8 @@ img {
   border-radius: 4px;
   margin-right: 12px;
   padding-left: 16px;
+  background-color: #2F303A;
+  color:  rgba(255, 255, 255, 0.6);
 }
 
 .third-box .for-input::-webkit-placeholder {
@@ -949,7 +992,7 @@ img {
   letter-spacing: 3%
   letter-spacing: 0.03em;
   padding: 6px 22px;
-  background color: #F5F4FA;
+  background-color: #F5F4FA;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   cursor: pointer;
