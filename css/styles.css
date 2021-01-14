@@ -55,8 +55,8 @@ img {
 
 .header .header-menu {
   display: flex;
-  width: 1170px;
   align-items: center;
+  width: 1170px;
 }
 
 .header .logo {
@@ -75,7 +75,7 @@ img {
 .header .navigation-list {
   display:flex;
   width: 294px;
-  padding: 32px 0px 0px 0px;
+  padding-top: 32px;
   margin: 0px 305px 0px 93px;
 }
 
@@ -124,15 +124,13 @@ img {
 .header .email-box {
   display: flex;
   width: 161px;
-  height: 16px;
-  margin: 0px 30px 0px 0px;
-  padding: 0px;
-  border: 0px;
-  align-items: center;
+  margin-right: 30px;
   justify-content: space-between;
 } 
 
 .email-box .email-link {
+  display: flex;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -144,6 +142,7 @@ img {
   padding: 0px;
   width: 161px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .email-box .email-icon {
@@ -153,11 +152,13 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.email-box .email-link:hover {
+.email-box .email-link:hover,
+.email-box .email-link:focus {
   color: var(--primary-text-color); 
 }
 
-.email-box .email-link:hover .email-icon {
+.email-box .email-link:hover .email-icon,
+.email-box .email-link:focus .email-icon {
   fill: var(--primary-text-color);
 }
 
@@ -165,15 +166,13 @@ img {
 .header .phone-box {
   display: flex;
   width: 142px;
-  height: 16px;
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
   justify-content: space-between;
   align-items: center;
 }
 
 .phone-box .phone-link {
+  display: flex;
+  align-items: center;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
